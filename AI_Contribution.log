@@ -1,45 +1,37 @@
-# BFS vs DFS Graph Search System
+# AI Contribution & Authorship Log
 
-## Short Description
-This system is an algorithmic search simulator designed to traverse and analyze graph structures using Breadth-First Search (BFS) and Depth-First Search (DFS). It solves the fundamental problem of finding paths between nodes in a network, which is essential for applications like route planning and network mapping. By executing both algorithms on the same graph, the system helps determine which search approach is more efficient for specific scenarios. It systematically tracks visited nodes, manages memory structures (queues for BFS, stacks for DFS), and outputs the final search paths. Ultimately, it provides a comparative view of their operational behavior to support better architectural decision-making.
+## Project Context
 
-## Project Details
-* **Course:** 02AML204 – Introduction to Artificial Intelligence
+* **Project Title:** BFS vs DFS Graph Search System
+* **Developer:** Lakshvir Singh Jasrotia
 * **PRN:** 25UAM038
-* **Name:** Lakshvir Singh Jasrotia
-* **Division:** ‘A’
-* **Date:** 4/10/2026
+* **Course:** 02AML204 – Introduction to Artificial Intelligence
 * **Assignment:** SLE-3: Architectural Design (Full C4 Model)
 
-## System Architecture (C4 Model)
+## 1. Overview of AI Assistance
 
-### 1. Context Diagram (Level 1)
-The Binary Tree Search Profiling System allows a user to configure and evaluate tree search algorithms. The user inputs parameters like tree depth and target node, and the system executes the search. Finally, the system outputs a comparison report showing execution time and nodes expanded for both BFS and DFS to the user.
+This document outlines the specific areas where Artificial Intelligence was utilized during the development and documentation of the system's architectural design to maintain full academic and developmental transparency.
 
-### 2. Container Diagram (Level 2)
-* **Input Module:** Parses user configurations like tree depth, target node, and number of test runs.
-* **Tree Model:** Dynamically generates and stores the complete 65,535-node binary tree structure in memory.
-* **Search Engine:** Executes the core Breadth-First and Depth-First search algorithms on the generated tree.
-* **Profiling Controller:** Uses Python's timeit to run algorithms 100 times and records execution metrics.
-* **Output Module:** Formats and displays the final performance comparison report to the user.
+| AI Tool Used | Primary Application                          |
+| :----------- | :------------------------------------------- |
+| **Gemini**   | Diagram generation and structural formatting |
 
-### 3. Component Diagram (Level 3)
-The Search Engine container uses an Algorithm Selector to route execution to either the BFS Traverser (queue-based) or the DFS Traverser (stack-based). During traversal, the Goal Tester constantly checks if the current node matches the target value of 7000. Simultaneously, the Node Expansion Counter increments for every node popped from the frontier to track the search effort.
+## 2. Detailed Breakdown of AI Contributions
 
-### 4. Code Level Overview (Level 4)
-The Code Level Overview (Level 4) outlines the core internal structures and functions of the search system without displaying the full source code. 
-* **`class TreeNode`**: Defines the individual data nodes.
-* **`generate_binary_tree()`**: Builds the complete 65,535-node tree.
-* **`bfs_search()` and `dfs_search()`**: Handle the algorithmic execution.
-* **`profile_algorithm()`**: Manages the 100 benchmark runs to evaluate and compare performance.
+The AI assistant (Gemini) was used strictly as a formatting and visualization aid, rather than a core logic generator.
 
-## Design Decisions
-The system intentionally separates the profiling controller from the search traversals to ensure accurate time measurements without overhead interference. Additionally, dedicated queue and stack data structures are isolated within the BFS and DFS components to prevent state leaks during repetitive benchmark runs.
+* **C4 Model Visualizations:** Gemini was utilized to generate the underlying Mermaid code required to render the C4 architectural diagrams (Context, Container, and Component levels) in draw.io.
+* **Documentation Structure:** The AI assisted in structuring the architectural explanations to ensure the documentation flowed logically and clearly communicated the system's hierarchy.
 
-## AI Contribution Note
-* **AI tools used:** Gemini
-* **What AI helped with:** Generating Mermaid code for draw.io C4 diagrams and structuring the architectural explanations.
-* **What I did myself:** Conducted the original SLE-2 profiling experiment, gathered the empirical metrics, selected the system components, and reviewed the final architecture.
+## 3. Detailed Breakdown of Human Contributions
 
-## Conclusion
-This architectural design exercise provided a clear understanding of how a profiling system is structured from a high-level user context down to specific code functions. Mapping the BFS vs. DFS system demonstrated how data smoothly flows between the input configuration, the core search engine, and the profiling tracker. It highlighted the practical importance of modular design in building clean, testable software systems.
+All core logic, experimental data, and high-level architectural decisions were produced independently by the author.
+
+* **Empirical Experimentation:** Independently conducted the original SLE-2 profiling experiment that forms the foundational data for this architectural design.
+* **Data Collection:** Solely responsible for gathering all empirical metrics from the algorithm benchmark runs.
+* **Architectural Decision Making:** Selected all system components, defined container boundaries, and established the interaction flow between the system modules (e.g., separating the profiling controller from the search traversals).
+* **Final Verification:** Manually reviewed, corrected, and approved the final system architecture and all AI-generated diagrams to ensure absolute accuracy.
+
+## 4. Statement of Authenticity
+
+I certify that the core software engineering concepts, performance analysis, and system architecture presented in this repository are entirely my original work. AI was used solely to enhance the presentation, visualization, and structural formatting of my original ideas.
