@@ -1,0 +1,45 @@
+# BFS vs DFS Graph Search System[cite: 1]
+
+## Short Description
+This system is an algorithmic search simulator designed to traverse and analyze graph structures using Breadth-First Search (BFS) and Depth-First Search (DFS)[cite: 1]. It solves the fundamental problem of finding paths between nodes in a network, which is essential for applications like route planning and network mapping[cite: 1]. By executing both algorithms on the same graph, the system helps determine which search approach is more efficient for specific scenarios[cite: 1]. It systematically tracks visited nodes, manages memory structures (queues for BFS, stacks for DFS), and outputs the final search paths[cite: 1]. Ultimately, it provides a comparative view of their operational behavior to support better architectural decision-making[cite: 1].
+
+## Project Details
+* **Course:** 02AML204 – Introduction to Artificial Intelligence[cite: 1]
+* **PRN:** 25UAM038[cite: 1]
+* **Name:** Lakshvir Singh Jasrotia[cite: 1]
+* **Division:** ‘A’[cite: 1]
+* **Date:** 4/10/2026[cite: 1]
+* **Assignment:** SLE-3: Architectural Design (Full C4 Model)[cite: 1]
+
+## System Architecture (C4 Model)
+
+### 1. Context Diagram (Level 1)
+The Binary Tree Search Profiling System allows a user to configure and evaluate tree search algorithms[cite: 1]. The user inputs parameters like tree depth and target node, and the system executes the search[cite: 1]. Finally, the system outputs a comparison report showing execution time and nodes expanded for both BFS and DFS to the user[cite: 1].
+
+### 2. Container Diagram (Level 2)
+* **Input Module:** Parses user configurations like tree depth, target node, and number of test runs[cite: 1].
+* **Tree Model:** Dynamically generates and stores the complete 65,535-node binary tree structure in memory[cite: 1].
+* **Search Engine:** Executes the core Breadth-First and Depth-First search algorithms on the generated tree[cite: 1].
+* **Profiling Controller:** Uses Python's timeit to run algorithms 100 times and records execution metrics[cite: 1].
+* **Output Module:** Formats and displays the final performance comparison report to the user[cite: 1].
+
+### 3. Component Diagram (Level 3)
+The Search Engine container uses an Algorithm Selector to route execution to either the BFS Traverser (queue-based) or the DFS Traverser (stack-based)[cite: 1]. During traversal, the Goal Tester constantly checks if the current node matches the target value of 7000[cite: 1]. Simultaneously, the Node Expansion Counter increments for every node popped from the frontier to track the search effort[cite: 1].
+
+### 4. Code Level Overview (Level 4)
+The Code Level Overview (Level 4) outlines the core internal structures and functions of the search system without displaying the full source code[cite: 1]. 
+* **`class TreeNode`**: Defines the individual data nodes[cite: 1].
+* **`generate_binary_tree()`**: Builds the complete 65,535-node tree[cite: 1].
+* **`bfs_search()` and `dfs_search()`**: Handle the algorithmic execution[cite: 1].
+* **`profile_algorithm()`**: Manages the 100 benchmark runs to evaluate and compare performance[cite: 1].
+
+## Design Decisions
+The system intentionally separates the profiling controller from the search traversals to ensure accurate time measurements without overhead interference[cite: 1]. Additionally, dedicated queue and stack data structures are isolated within the BFS and DFS components to prevent state leaks during repetitive benchmark runs[cite: 1].
+
+## AI Contribution Note
+* **AI tools used:** Gemini[cite: 1]
+* **What AI helped with:** Generating Mermaid code for draw.io C4 diagrams and structuring the architectural explanations[cite: 1].
+* **What I did myself:** Conducted the original SLE-2 profiling experiment, gathered the empirical metrics, selected the system components, and reviewed the final architecture[cite: 1].
+
+## Conclusion
+This architectural design exercise provided a clear understanding of how a profiling system is structured from a high-level user context down to specific code functions[cite: 1]. Mapping the BFS vs. DFS system demonstrated how data smoothly flows between the input configuration, the core search engine, and the profiling tracker[cite: 1]. It highlighted the practical importance of modular design in building clean, testable software systems[cite: 1].
