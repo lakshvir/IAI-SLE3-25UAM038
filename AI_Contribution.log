@@ -1,1 +1,32 @@
+# AI Contribution & Authorship Log
 
+## Project Context
+* **Project Title:** BFS vs DFS Graph Search System[cite: 1]
+* **Developer:** Lakshvir Singh Jasrotia[cite: 1]
+* **PRN:** 25UAM038[cite: 1]
+* **Course:** 02AML204 – Introduction to Artificial Intelligence[cite: 1]
+* **Assignment:** SLE-3: Architectural Design (Full C4 Model)[cite: 1]
+
+## 1. Overview of AI Assistance
+This document outlines the specific areas where Artificial Intelligence was utilized during the development and documentation of the system's architectural design to maintain full academic and developmental transparency.
+
+| AI Tool Used | Primary Application |
+| :--- | :--- |
+| **Gemini**[cite: 1] | Diagram generation and structural formatting[cite: 1] |
+
+## 2. Detailed Breakdown of AI Contributions
+The AI assistant (Gemini) was used strictly as a formatting and visualization aid, rather than a core logic generator[cite: 1]. 
+
+* **C4 Model Visualizations:** Gemini was utilized to generate the underlying Mermaid code required to render the C4 architectural diagrams (Context, Container, and Component levels) in draw.io[cite: 1].
+* **Documentation Structure:** The AI assisted in structuring the architectural explanations to ensure the documentation flowed logically and clearly communicated the system's hierarchy[cite: 1].
+
+## 3. Detailed Breakdown of Human Contributions
+All core logic, experimental data, and high-level architectural decisions were produced independently by the author[cite: 1].
+
+* **Empirical Experimentation:** Independently conducted the original SLE-2 profiling experiment that forms the foundational data for this architectural design[cite: 1].
+* **Data Collection:** Solely responsible for gathering all empirical metrics from the algorithm benchmark runs[cite: 1].
+* **Architectural Decision Making:** Selected all system components, defined container boundaries, and established the interaction flow between the system modules (e.g., separating the profiling controller from the search traversals)[cite: 1].
+* **Final Verification:** Manually reviewed, corrected, and approved the final system architecture and all AI-generated diagrams to ensure absolute accuracy[cite: 1].
+
+## 4. Statement of Authenticity
+I certify that the core software engineering concepts, performance analysis, and system architecture presented in this repository are entirely my original work[cite: 1]. AI was used solely to enhance the presentation, visualization, and structural formatting of my original ideas[cite: 1].
