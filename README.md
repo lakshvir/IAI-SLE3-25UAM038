@@ -1,4 +1,4 @@
-# BFS vs DFS Graph Search System[cite: 1]
+# BFS vs DFS Graph Search System
 
 ## Short Description
 This system is an algorithmic search simulator designed to traverse and analyze graph structures using Breadth-First Search (BFS) and Depth-First Search (DFS)[cite: 1]. It solves the fundamental problem of finding paths between nodes in a network, which is essential for applications like route planning and network mapping[cite: 1]. By executing both algorithms on the same graph, the system helps determine which search approach is more efficient for specific scenarios[cite: 1]. It systematically tracks visited nodes, manages memory structures (queues for BFS, stacks for DFS), and outputs the final search paths[cite: 1]. Ultimately, it provides a comparative view of their operational behavior to support better architectural decision-making[cite: 1].
